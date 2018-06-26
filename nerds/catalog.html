@@ -18,7 +18,7 @@
 							<ul class="site-navigation">
 								<li><a href="#">Студия</a></li>
 								<li><a href="#">Клиенты</a></li>
-								<li><a class="site-navigation-current" href="#">Магазин</a></li>
+								<li class="site-navigation-current"><a href="#">Магазин</a></li>
 								<li><a href="#">Контакты</a></li>
 							</ul>
 							<p class="cart"><a href="#">Корзина</a></p>
@@ -50,23 +50,6 @@
 										<label class="max-price">До<input type="text" name="max-price" value="15000"></label>
 									</div>
 								</div>
-								<!-- <ul>
-									<li class="filter-option">
-										<label>
-											<input class="input-filter input-filter-range"  type="range" name="filter-slider">
-										</label>
-									</li>
-									<li class="filter-option">
-										<label class="limits-heading" aria-label="минимальная цена">От
-											<input class="input-filter range-min" type="text" name="filter-min-price" placeholder="0">
-										</label>
-									</li>
-									<li class="filter-option">
-										<label class="limits-heading" aria-label="максимальная цена">До
-											<input class="input-filter range-max" type="text" name="filter-max-price" placeholder="15000">
-										</label>
-									</li>
-								</ul> -->
 							</fieldset>	
 							<fieldset>
 								<legend class="radio-heading">Сетка:</legend>
@@ -204,11 +187,12 @@
 			<footer class="main-footer">
 				<section class="contacts">
 					<h2 class="visually-hidden">Контакты</h2>
-					<img src="img/map.jpg" height="416" width="1440" alt="416">
+					<img src="img/map.jpg" height="416" width="1440" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651552!2d30.320894616394266!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1529871897526" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
 					<div class="contacts-wrapper">
 						<b>NЁRDS DESIGN STUDIO</b>
-						<p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
-						<p>тел. +7 (812) 275-75-75</p>
+						<p class="adress">191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
+						<p class="telephone">тел. +7 (812) 275-75-75</p>
 						<a class="button contact-link" href="">Напишите нам</a>
 					</div>
 				</section>
@@ -239,31 +223,14 @@
 							</div>
 							<div class="contact-input-wrapper textarea-wrapper">
 								<label for="appointment-textfield" class="input-heading">Текст письма</label>
-								<textarea id="appointment-textfield" name="appointment-textfield" placeholder="В свободной форме">
-								</textarea>
+								<textarea id="appointment-textfield" name="appointment-textfield" placeholder="В свободной форме"></textarea>
 							</div>
 							<button  type="submit" class="button appointment-submit">Отправить</button>
 						</form>
-						<button class="button form-close" type="button">
-							<span class="visually-hidden">закрыть</span>
-						</button>
+						<button class="button form-close" type="button"><span class="visually-hidden">закрыть</span></button>
 					</div>
 				</section>
 			</footer>
-			<script>
-				var link = document.querySelector(".contact-link");
-				var popup = document.querySelector(".contact-form");
-				var close = document.querySelector(".form-close");
-
-				link.addEventListener("click", function (evt) {
-					evt.preventDefault();
-					popup.classList.add ("modal-show");
-					});
-
-				close.addEventListener("click", function (evt){
-					evt.preventDefault();
-					popup.classList.remove ("modal-show");
-				})
-			</script>
+			<script src="js/javascript.js"></script>
 		</body>
 	</html>
